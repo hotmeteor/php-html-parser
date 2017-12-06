@@ -172,7 +172,7 @@ class Selector
         }
 
         // XPath index
-        if (array_key_exists($rule, 'tag') && array_key_exists($rule, 'key') && is_numeric($rule['key'])) {
+        if (array_key_exists('tag', $rule) && array_key_exists('key', $rule) && is_numeric($rule['key'])) {
             $count = 0;
             /** @var AbstractNode $node */
             foreach ($nodes as $node) {
